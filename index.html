@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover restaurants, explore delicious food and find your favourite meals with BiteBox.">
+
+    <title>BiteBox | Food Ordering</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER AND NAVIGATION -->
+    <header class="header">
+        <div class="logo">
+            BiteBox<span>.</span>
+        </div>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#restaurants">Restaurants</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <a href="#restaurants" class="header-btn">Explore Food</a>
+    </header>
+
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+                <p class="hero-tag">GOOD FOOD, GOOD MOOD!</p>
+
+                <h1>
+                    Discover Your
+                    <span>Favourite Food</span>
+                </h1>
+
+                <p class="hero-description">
+                    Explore amazing restaurants, discover delicious dishes
+                    and enjoy your favourite meals.
+                </p>
+
+                <a href="#restaurants" class="primary-btn">
+                    Explore Restaurants
+                </a>
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=900"
+                    alt="A table filled with delicious food">
+            </div>
+
+        </section>
+
+
+        <!-- FOOD CATEGORIES -->
+        <section class="categories" id="categories">
+
+            <div class="section-heading">
+                <p>EXPLORE</p>
+                <h2>Popular Categories</h2>
+            </div>
+
+            <div class="category-container">
+
+                <div class="category-item">
+                    <span>🍕</span>
+                    <h3>Pizza</h3>
+                </div>
+
+                <div class="category-item">
+                    <span>🍔</span>
+                    <h3>Burgers</h3>
+                </div>
+
+                <div class="category-item">
+                    <span>🍜</span>
+                    <h3>Noodles</h3>
+                </div>
+
+                <div class="category-item">
+                    <span>🍛</span>
+                    <h3>Biryani</h3>
+                </div>
+
+                <div class="category-item">
+                    <span>🍰</span>
+                    <h3>Desserts</h3>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RESTAURANT LISTINGS -->
+        <section class="restaurants" id="restaurants">
+
+            <div class="section-heading">
+                <p>OUR COLLECTION</p>
+                <h2>Popular Restaurants</h2>
+                <span>Discover the best places to satisfy your cravings.</span>
+            </div>
+
+            <div class="restaurant-grid">
+
+                <!-- RESTAURANT 1: BIRYANI HOUSE -->
+                <article class="restaurant-card">
+                    <img
+                        src="https://commons.wikimedia.org/wiki/Special:FilePath/Briyani_food.jpg"
+                        alt="Delicious Indian biryani"
+                        onerror="this.onerror=null; this.src='https://commons.wikimedia.org/wiki/Special:FilePath/India_food.jpg';">
+
+                    <div class="card-content">
+                        <span class="food-type">Indian Cuisine</span>
+                        <h3>Biryani House</h3>
+                        <p>Authentic flavours and delicious biryani.</p>
+                        <div class="card-details">
+                            <span>⭐ 4.8</span>
+                            <span>30 min</span>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- RESTAURANT 2: PIZZA CORNER -->
+                <article class="restaurant-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1579751626657-72bc17010498?w=700"
+                        alt="Freshly baked pizza">
+
+                    <div class="card-content">
+                        <span class="food-type">Italian Cuisine</span>
+                        <h3>Pizza Corner</h3>
+                        <p>Freshly baked pizzas with delicious toppings.</p>
+                        <div class="card-details">
+                            <span>⭐ 4.6</span>
+                            <span>25 min</span>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- RESTAURANT 3: BURGER HUB -->
+                <article class="restaurant-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=700"
+                        alt="Juicy cheeseburger">
+
+                    <div class="card-content">
+                        <span class="food-type">Fast Food</span>
+                        <h3>Burger Hub</h3>
+                        <p>Juicy burgers made with fresh ingredients.</p>
+                        <div class="card-details">
+                            <span>⭐ 4.5</span>
+                            <span>20 min</span>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- RESTAURANT 4: SOUTH SPICE -->
+                <article class="restaurant-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=700"
+                        alt="Traditional Indian meal">
+
+                    <div class="card-content">
+                        <span class="food-type">South Indian</span>
+                        <h3>South Spice</h3>
+                        <p>Traditional South Indian dishes and flavours.</p>
+                        <div class="card-details">
+                            <span>⭐ 4.7</span>
+                            <span>20 min</span>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- RESTAURANT 5: WOK EXPRESS -->
+                <article class="restaurant-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=700"
+                        alt="Delicious noodles">
+
+                    <div class="card-content">
+                        <span class="food-type">Asian Cuisine</span>
+                        <h3>Wok Express</h3>
+                        <p>Enjoy flavourful noodles and Asian specials.</p>
+                        <div class="card-details">
+                            <span>⭐ 4.4</span>
+                            <span>35 min</span>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- RESTAURANT 6: SWEET TREATS -->
+                <article class="restaurant-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=700"
+                        alt="Delicious strawberry dessert">
+
+                    <div class="card-content">
+                        <span class="food-type">Desserts</span>
+                        <h3>Sweet Treats</h3>
+                        <p>Delicious desserts for every sweet craving.</p>
+                        <div class="card-details">
+                            <span>⭐ 4.9</span>
+                            <span>15 min</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT SECTION -->
+        <section class="about" id="about">
+            <h2>Good Food. Great Experiences.</h2>
+            <p>
+                BiteBox helps you discover restaurants and explore
+                delicious food options all in one place.
+            </p>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <h2>BiteBox.</h2>
+        <p>Made with ❤️ for food lovers.</p>
+        <p>&copy; 2026 BiteBox. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,423 @@
+
+/* =====================================
+   1. GENERAL STYLING
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #f15a29;
+    --dark-color: #242424;
+    --light-color: #fff8f4;
+    --text-color: #666666;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: var(--dark-color);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =====================================
+   2. HEADER AND NAVIGATION - FLEXBOX
+===================================== */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 5%;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--dark-color);
+}
+
+.logo span {
+    color: var(--primary-color);
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+}
+
+.navbar a {
+    color: var(--dark-color);
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: var(--primary-color);
+}
+
+.header-btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.header-btn:hover {
+    background-color: #d94718;
+}
+
+
+/* =====================================
+   3. HERO SECTION - FLEXBOX
+===================================== */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 50px 6%;
+    background-color: var(--light-color);
+}
+
+.hero-content {
+    width: 100%;
+}
+
+.hero-tag {
+    color: var(--primary-color);
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: clamp(2rem, 6vw, 3.8rem);
+    line-height: 1.2;
+    margin: 15px 0;
+}
+
+.hero h1 span {
+    color: var(--primary-color);
+}
+
+.hero-description {
+    color: var(--text-color);
+    margin-bottom: 25px;
+    max-width: 500px;
+}
+
+.primary-btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 13px 24px;
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+}
+
+.primary-btn:hover {
+    transform: translateY(-3px);
+}
+
+.hero-image {
+    width: 100%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+
+/* =====================================
+   4. SECTION HEADINGS
+===================================== */
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-heading p {
+    color: var(--primary-color);
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    font-size: clamp(1.7rem, 4vw, 2.4rem);
+    margin: 8px 0;
+}
+
+.section-heading span {
+    color: var(--text-color);
+    font-size: 0.95rem;
+}
+
+
+/* =====================================
+   5. FOOD CATEGORIES - FLEXBOX
+===================================== */
+
+.categories {
+    padding: 55px 6%;
+}
+
+.category-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.category-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex: 1 1 100px;
+    max-width: 150px;
+    padding: 20px 10px;
+    background-color: var(--light-color);
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.category-item:hover {
+    transform: translateY(-5px);
+}
+
+.category-item span {
+    font-size: 2rem;
+}
+
+.category-item h3 {
+    font-size: 0.95rem;
+}
+
+
+/* =====================================
+   6. RESTAURANT SECTION - CSS GRID
+===================================== */
+
+.restaurants {
+    padding: 55px 6%;
+    background-color: #fafafa;
+}
+
+.restaurant-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+
+/* RESTAURANT CARDS */
+
+.restaurant-card {
+    background-color: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.restaurant-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.restaurant-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.restaurant-card:hover img {
+    transform: scale(1.05);
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.food-type {
+    color: var(--primary-color);
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card-content h3 {
+    font-size: 1.2rem;
+    margin: 8px 0;
+}
+
+.card-content p {
+    color: var(--text-color);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.card-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eeeeee;
+    padding-top: 12px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+
+/* =====================================
+   7. CONTAINER QUERIES
+===================================== */
+
+.restaurant-grid {
+    container-type: inline-size;
+    container-name: restaurant-list;
+}
+
+@container restaurant-list (min-width: 450px) {
+    .restaurant-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .restaurant-card img {
+        height: 180px;
+    }
+}
+
+
+/* =====================================
+   8. ABOUT SECTION
+===================================== */
+
+.about {
+    text-align: center;
+    padding: 60px 6%;
+    background-color: var(--light-color);
+}
+
+.about h2 {
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
+    margin-bottom: 12px;
+}
+
+.about p {
+    color: var(--text-color);
+    max-width: 600px;
+    margin: auto;
+}
+
+
+/* =====================================
+   9. FOOTER
+===================================== */
+
+.footer {
+    text-align: center;
+    padding: 30px 15px;
+    background-color: var(--dark-color);
+    color: white;
+}
+
+.footer h2 {
+    color: var(--primary-color);
+    margin-bottom: 8px;
+}
+
+.footer p {
+    font-size: 0.85rem;
+    color: #cccccc;
+}
+
+
+/* =====================================
+   10. TABLET RESPONSIVE DESIGN
+===================================== */
+
+@media (min-width: 600px) {
+
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hero {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hero-content,
+    .hero-image {
+        flex: 1;
+    }
+
+    .restaurant-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =====================================
+   11. DESKTOP RESPONSIVE DESIGN
+===================================== */
+
+@media (min-width: 900px) {
+
+    .header {
+        padding: 20px 7%;
+    }
+
+    .hero {
+        padding: 80px 8%;
+    }
+
+    .hero-image img {
+        height: 400px;
+    }
+
+    .restaurant-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .categories,
+    .restaurants {
+        padding: 75px 8%;
+    }
+
+}
