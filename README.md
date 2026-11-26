@@ -2,7 +2,7 @@
 # Lab Experiment 3: Responsive Layout with Grid & Flexbox
 
 ## Project Title
-BiteBox - Online Food Ordering and Restaurant Discovery Website
+**BiteBox - Online Food Ordering and Restaurant Discovery Website**
 
 ## Objective
 To develop a mobile-first responsive food ordering webpage using CSS Grid and Flexbox, providing users with an interactive platform to explore food categories and restaurant listings.
@@ -28,14 +28,19 @@ To develop a mobile-first responsive food ordering webpage using CSS Grid and Fl
 
 ## Project Structure
 
+```text
 Lab-Experiment-3/
 │
 ├── index.html
 ├── style.css
-└── README.md
+├── README.md
+└── screenshots/
+    ├── desktop-view.png.png
+    ├── table-view.png.png
+    └── mobile-view.png.png
+```
 
 ## Responsive Breakpoints
-
 - Mobile: Below 600px
 - Tablet: 600px to 899px
 - Desktop: 900px and above
@@ -60,10 +65,12 @@ Used to adjust layouts for mobile, tablet and desktop screens.
 Used to adapt restaurant card styling according to the available container width.
 
 ## Testing
-The webpage will be tested across:
+The webpage is tested across:
 - Mobile devices
 - Tablets
 - Desktop screens
+
+Screenshots of the different screen sizes are available in the `screenshots` folder.
 
 ## Conclusion
 The experiment demonstrates the use of CSS Grid and Flexbox to create a responsive and user-friendly food ordering website that adapts to different screen sizes.
